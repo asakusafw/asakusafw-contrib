@@ -7,10 +7,7 @@ You can get machine image from https://downloads.cloudera.com/cloudera-demo-0.3.
 run script as following.
 
 wget https://github.com/downloads/asakusafw/asakusafw-contrib/cdh3vm.zip
-unzip cdh3vm.zip
+tar xvzf cdh3vm.zip
 cd cdh3vm
-find ./* -name "*.sh" | xargs chmod u+x
 ./setup.sh
-source ~/.bashrc
-rm cdh3vm.zip
-rm -rf cdh3vm
+
