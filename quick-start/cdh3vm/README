@@ -4,10 +4,11 @@ You can get machine image from https://downloads.cloudera.com/cloudera-demo-0.3.
 このスクリプトはClouderaが配布する仮想マシン上でAsakusa Frameworkをセットアップします。
 仮想マシンは、 https://downloads.cloudera.com/cloudera-demo-0.3.7.vmwarevm.tar.bz2 からダウンロードすることができます。
 
-run script as following.
+run script as following. 
 
 wget https://github.com/downloads/asakusafw/asakusafw-contrib/quickstart-cdh3vm.tar.gz
 tar xvzf quickstart-cdh3vm.tar.gz
 cd cdh3vm
 ./setup.sh
+source ~/.asakusarc
 
