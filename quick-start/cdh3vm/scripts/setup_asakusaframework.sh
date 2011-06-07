@@ -1,4 +1,6 @@
 # Asakuasのセットアップ
+~/.asakusarc
+
 mkdir ~/workspace
 cd ~/workspace
 

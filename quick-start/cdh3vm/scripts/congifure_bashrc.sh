@@ -8,5 +8,10 @@ ASAKUSA_HOME=$HOME/asakusa
 export ASAKUSA_HOME
 
 PATH=$JAVA_HOME/bin:$PATH:$HADOOP_HOME/bin
-export PATH" >> ~/.bashrc
+export PATH" > ~/.asakusarc
+
+echo "
+~/.asakusarc
+" >> ~/.bashrc
+
 
