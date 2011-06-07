@@ -15,7 +15,7 @@ source ~/.asakusarc
 
 echo "
 ==================================================================================================
-configure asakusa framework pseudo
+configure thundergate and hadoop run in pseudo mode.
 ==================================================================================================
 "
 sleep 1
