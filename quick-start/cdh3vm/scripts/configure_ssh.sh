@@ -3,7 +3,7 @@
 # sshでパスフレーズなしでログインできるようにする
 echo "
 ==================================================================================================
-allow ssh login to localhost without passphase, please enter yes.
+allow ssh login to localhost without passphase.
 ==================================================================================================
 "
 sleep 1
