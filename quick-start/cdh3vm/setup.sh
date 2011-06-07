@@ -1,6 +1,7 @@
 cat ./messages/start.txt
 
 sudo ./scripts/install_mysql.sh
+./setup_mysql.sh
 sudo ./scripts/install_git.sh
 sudo ./scripts/install_ruby.sh
 sudo ./scripts/install_maven.sh

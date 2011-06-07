@@ -1,5 +1,12 @@
 # Asakusaの環境変数の設定
 echo "
+==================================================================================================
+configure asakusa environment valiables at .asakusarc
+==================================================================================================
+"
+sleep 1
+
+echo "
 JAVA_HOME=/usr/lib/jvm/java-6-sun
 export JAVA_HOME
 HADOOP_HOME=/usr/lib/hadoop
@@ -14,4 +21,6 @@ echo "
 ~/.asakusarc
 " >> ~/.bashrc
 
+
+cat ~/.asakusarc
 
