@@ -1,5 +1,7 @@
 #!/bin/bash
 
+REPO_URL=https://asakusafw.s3.amazonaws.com/maven/
+
 usage() {
         cat <<EOF
 Usage: setup_batchapp_project
@@ -10,7 +12,9 @@ Usage: setup_batchapp_project
  ----------------------------------------------------
  1   グループID (パッケージ名)                必須
  2   アーティファクトID (プロジェクト名)      必須
- 3   プロジェクトで使用するAsakusaのVersion   必須
+ 3   Asakusa FrameworkのVersion               必須
+     (指定可能なVersionは以下のURLを参照)
+     ${REPO_URL}archetype-catalog.xml
 EOF
 }
 
@@ -31,8 +35,6 @@ if [[ "$ASAKUSA_VERSION" = *-SNAPSHOT ]]; then
 else
   REPO_SUFFIX=releases
 fi
-
-REPO_URL=https://asakusafw.s3.amazonaws.com/maven/
 
 cd "$HOME"/workspace
 mvn archetype:generate -DarchetypeRepository="${REPO_URL}${REPO_SUFFIX}" -DarchetypeCatalog="${REPO_URL}"archetype-catalog.xml -DinteractiveMode=false -DarchetypeGroupId=com.asakusafw -DarchetypeArtifactId=asakusa-archetype-batchapp -DarchetypeVersion="$ASAKUSA_VERSION" -DgroupId="$GROUPID" -DartifactId="$ARTIFACTID" -Dversion=1.0-SNAPSHOT -Dpackage="$GROUPID"
