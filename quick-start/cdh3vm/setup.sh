@@ -9,7 +9,7 @@ sudo ./scripts/install_ruby.sh
 sudo ./scripts/install_maven.sh
 sudo ./scripts/configure_apparmor.sh
 ./scripts/configure_ssh.sh
-./scripts/congifure_bashrc.sh
+./scripts/configure_profile.sh
 source ~/.asakusarc
 ./scripts/setup_asakusaframework.sh
 

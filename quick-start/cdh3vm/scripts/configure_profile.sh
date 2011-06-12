@@ -21,9 +21,12 @@ export PATH
 " > ~/.asakusarc
 
 echo "
+# Configuration for Asakusa Framework
 . ~/.asakusarc
-" >> ~/.bashrc
-
+if [ ! -d "/tmp/asakusa" ]; then
+  mkdir -m 777 /tmp/asakusa
+fi
+" >> ~/.profile
 
 cat ~/.asakusarc
 
