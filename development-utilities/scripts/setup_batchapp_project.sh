@@ -1,6 +1,6 @@
 #!/bin/bash
 
-REPO_URL=https://asakusafw.s3.amazonaws.com/maven/
+REPO_URL=http://asakusafw.s3.amazonaws.com/maven/
 
 usage() {
         cat <<EOF
